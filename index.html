@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Research Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9fafb;
+        }
+        .navbar {
+            background-color: #1f2937;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .publication {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Your Name</h1>
+            <div class="space-x-4">
+                <a href="#home" class="hover:text-gray-300">Home</a>
+                <a href="#research" class="hover:text-gray-300">Research</a>
+                <a href="#publications" class="hover:text-gray-300">Publications</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg">
+            Hello! I am Your Name, a researcher in [Your Field] at [Your Institution]. My work focuses on [brief description of your research focus]. I am passionate about advancing knowledge in my field and collaborating with others to solve complex problems.
+        </p>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <h2 class="text-3xl font-bold mb-4">Research Interests</h2>
+        <ul class="list-disc list-inside text-lg">
+            <li>[Research Interest 1]</li>
+            <li>[Research Interest 2]</li>
+            <li>[Research Interest 3]</li>
+        </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <h2 class="text-3xl font-bold mb-4">Publications</h2>
+        <div class="publication">
+            <p class="font-semibold">[Publication Title 1]</p>
+            <p>[Authors], [Journal/Conference], [Year]</p>
+            <a href="#" class="text-blue-500 hover:underline">DOI/Link</a>
+        </div>
+        <div class="publication">
+            <p class="font-semibold">[Publication Title 2]</p>
+            <p>[Authors], [Journal/Conference], [Year]</p>
+            <a href="#" class="text-blue-500 hover:underline">DOI/Link</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="text-3xl font-bold mb-4">Contact</h2>
+        <p class="text-lg">Email: <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">your.email@example.com</a></p>
+        <p class="text-lg">LinkedIn: <a href="#" class="text-blue-500 hover:underline">Your LinkedIn Profile</a></p>
+        <p class="text-lg">Twitter: <a href="#" class="text-blue-500 hover:underline">@YourTwitterHandle</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
